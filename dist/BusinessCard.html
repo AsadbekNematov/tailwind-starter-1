@@ -3,29 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Card</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Ysung Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .card {
+            box-shadow: 0px 0px 25px -5px orange;
+            background-color: #1e1e1e;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+            border: 3px solid orange;
+            object-fit: fill;
+        }
+
+        .name {
+            font-size: 24px;
+            margin-top: 10px;
+            color: orange;
+        }
+
+        .bio {
+            font-size: 14px;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        .hire-me {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: orange;
+            color: #1e1e1e;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .hire-me:hover {
+            background-color: #ff8c00;
+        }
+    </style>
 </head>
-<body class="bg-gray-200 flex items-center justify-center h-screen">
-
-    <!-- Business Card Container -->
-    <div class="bg-white p-6 rounded-lg shadow-lg w-96">
-        <!-- Circle Image -->
-        <img src="https://via.placeholder.com/100" alt="Profile Image" class="mx-auto w-44 h-44 rounded-full shadow-md">
-
-        <!-- Name and Last Name -->
-        <h1 class="text-center text-2xl mt-4 font-semibold">John Doe</h1>
-
-        <!-- Small Bio -->
-        <p class="text-center text-gray-600 mt-2">
-            Web Developer with 5 years of experience in building and maintaining responsive websites. Proficient in HTML, CSS, JavaScript, and jQuery.
-        </p>
-
-        <!-- Hire Me Button -->
-        <div class="mt-4 text-center">
-            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Hire Me</button>
-        </div>
+<body>
+    <div class="card">
+        <img src="https://avatarfiles.alphacoders.com/297/297782.jpg" alt="John Wick's Avatar" class="avatar">
+        <div class="name">John Wick</div>
+        <div class="bio">Ex-hitman seeking a peaceful life. Known for precise aim and a deep love for dogs. They call me 'Baba Yaga'.</div>
+        <button class="hire-me">Hire for a Special Task</button>
     </div>
-
 </body>
 </html>
